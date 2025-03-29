@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #f4f4f4; /* Light text color for contrast */
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #f7a7d4, #9b59b6); /* Pink to Purple gradient */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.video-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #292929; /* Darker background for video section */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    position: relative;
+}
+
+.video-section h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f7a7d4; /* Pink text for better visibility */
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+/* Control Section */
+.controls-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #333; /* Dark background for controls */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Control Section Header */
+.controls-section h2 {
+    text-align: center;
+    color: #3498db; /* Blue heading */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Start Button */
+#start-btn {
+    background-color: #f39c12; /* Gold background */
+    color: #fff;
+}
+
+#start-btn:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#start-btn:disabled {
+    background-color: #6c757d; /* Grey background when disabled */
+    cursor: not-allowed;
+}
+
+/* Stop Button */
+#stop-btn {
+    background-color: #95a5a6; /* Light silver background */
+    color: #fff;
+}
+
+#stop-btn:hover {
+    background-color: #7f8c8d; /* Darker silver on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#stop-btn:disabled {
+    background-color: #6c757d; /* Grey background when disabled */
+    cursor: not-allowed;
+}
+
+/* Status Message */
+#status-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #f4f4f4; /* Light text color for status */
+    transition: color 0.3s ease;
+}
+
+/* Change color of status message on hover */
+#status-message:hover {
+    color: #f7a7d4; /* Pink text when hovering over the status message */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc; /* Light grey footer text */
+}
+
+/* Add some subtle animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dashboard-container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Hover effect for the whole video section */
+.video-section:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03); /* Slight zoom effect on hover */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the control section */
+.controls-section:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03); /* Slight zoom effect on hover */
+    transition: all 0.3s ease;
+}
+#tech-image {
+    width: 100%; /* Makes the image cover the entire section */
+    height: auto;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the image stays in the background */
+}
+

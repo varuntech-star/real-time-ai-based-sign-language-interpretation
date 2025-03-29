@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Interpreter Dashboard</title>
+    <link rel="stylesheet" href="ash.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <h1>Real-Time Sign Language Interpreter</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="video-section">
+                <h2></h2>
+                <video id="video" width="640" height="480" autoplay></video>
+                <div class="overlay">
+                    <p id="prediction">Your sign language will be interpreted here!</p>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <h2>Control Panel</h2>
+                <button id="start-btn" class="btn">Start Camera</button>
+                <button id="stop-btn" class="btn disabled" disabled>Stop Camera</button>
+                <div id="status-message">Status: Waiting for user to start the camera.</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Sign Language Interpreter. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <div class="video-section">
+      <h2></h2>
+      <img id="tech-image" src="EMB.jpg" alt="Red Tech HD" />
+      
+  </div>
+  
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
+
